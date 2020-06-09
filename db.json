@@ -7,7 +7,7 @@
     },
     {
       "content": "state changes are made with actions",
-      "important": true,
+      "important": false,
       "id": 2
     },
     {
@@ -24,6 +24,11 @@
       "content": "Communicating with server in Redux application",
       "important": true,
       "id": 5
+    },
+    {
+      "content": "Learning about redux Thunk",
+      "important": false,
+      "id": 6
     }
   ]
 }

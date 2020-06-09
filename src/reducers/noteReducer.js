@@ -62,9 +62,9 @@ export const createNote = (content) => {
 //   }
 // }
 
-export const toggleImportanceOf = (id, toggledNote) => {
+export const toggleImportanceOf = (toggledNote) => {
   return async (dispatch) => {
-    const newNote = await noteService.update(id, toggledNote)
+    const newNote = await noteService.updateToggle(toggledNote)
     dispatch({
       type: 'TOGGLE_IMPORTANCE',
       data: newNote,

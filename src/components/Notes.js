@@ -24,21 +24,13 @@ const Notes = () => {
       : notes.filter((note) => !note.important)
   })
 
-  const handleToggleImportance = (id) => {
-    const note = notes.find((n) => n.id === id)
-    const toggledNote = { ...note, important: !note.important }
-    // const newNote = await noteService.update(id, toggledNote)
-
-    dispatch(toggleImportanceOf(id, toggledNote))
-  }
-
   return (
     <ul>
       {notes.map((note) => (
         <Note
           key={note.id}
           note={note}
-          handleClick={() => handleToggleImportance(note.id)}
+          handleClick={() => dispatch(toggleImportanceOf(note))}
         />
       ))}
     </ul>

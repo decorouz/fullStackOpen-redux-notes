@@ -7,7 +7,7 @@
     },
     {
       "content": "state changes are made with actions",
-      "important": false,
+      "important": true,
       "id": 2
     },
     {
@@ -29,6 +29,16 @@
       "content": "Learning about redux Thunk",
       "important": true,
       "id": 6
+    },
+    {
+      "content": "Capitalism and socialism",
+      "important": true,
+      "id": 7
+    },
+    {
+      "content": "Testing connect functionality",
+      "important": false,
+      "id": 8
     }
   ]
 }

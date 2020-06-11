@@ -1,5 +1,4 @@
 import React from 'react'
-// import noteService from '../services/notes'
 import { toggleImportanceOf } from '../reducers/noteReducer'
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -12,7 +11,7 @@ const Note = ({ note, handleClick }) => {
   )
 }
 
-const Notes = () => {
+const Notes = (props) => {
   const dispatch = useDispatch()
 
   const notes = useSelector(({ filter, notes }) => {
